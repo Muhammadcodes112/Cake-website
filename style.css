@@ -89,3 +89,26 @@ header .right-navbar .image{
     margin-left: 50px;
     box-shadow: -1px 5px 5px #f9e8e8, 1px -5px 5px #ffffff;
 }
+
+
+
+
+.home-page {
+    background-image: url(./image/pexels-chalo-1657343\ \(1\).jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: #222; /* Set text color to white or a suitable contrast color */
+    padding: 100px 20px; /* Adjust padding according to your design */
+}
+
+/* Styling for the text and button */
+.home-page h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.home-page h2 {
+    font-size
+}
