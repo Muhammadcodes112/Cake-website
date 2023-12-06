@@ -1,0 +1,91 @@
+@import url('Https://fonts.googleapis.com/css2?family=Poppins');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    color: black;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    align-items: center;
+    height: 100px;
+    padding: 0 40px;
+}
+nav {
+    display: flex;
+    align-items: center;
+}
+
+header .middle-navbar a {
+    text-decoration: none;
+    color: #222;
+    position: relative;
+    padding-bottom: 5px;
+    transition: color 0.3s;
+}
+
+header .middle-navbar a:hover {
+    color: #fb61da; /* Change to pink color */
+}
+
+header .middle-navbar a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #fb61da; /* Pink color */
+    transition: width 0.3s;
+}
+
+header .middle-navbar a:hover::after {
+    width: 100%;
+}
+header .left-navbar img{
+    height: 200px;
+    margin-top: 20px;
+}
+header .middle-navbar a{
+    margin-left: 40px;
+    color: black;
+    position: relative;
+}
+header .right-navbar {
+    margin-right: 50px;
+    display: flex;
+    align-items: center;
+}
+header .right-navbar img{
+    width: 20px;
+    height: 20px;
+}
+header .right-navbar a{
+    color: black;
+}
+header .right-navbar button{
+    width: 150px;
+    height: 40px;
+    border: 2px solid pink;
+    background-color: transparent;
+}
+header .right-navbar .image{
+    border-radius: 50px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    box-shadow: -1px 5px 5px #f9e8e8, 1px -5px 5px #ffffff;
+}
