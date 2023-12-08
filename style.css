@@ -1,5 +1,4 @@
 @import url('Https://fonts.googleapis.com/css2?family=Poppins');
-
 * {
     margin: 0;
     padding: 0;
@@ -12,20 +11,28 @@
 }
 body{
     color: black;
+    background-color: #f0f0f0;
 }
+
+:root{
+    --bg-color: #fff;
+    --second-bg-color: #222;
+    --text-color: rgb(15, 15, 15);
+    --main-color: rgb(244, 74, 111);
+}
+
 header{
     display: flex;
     justify-content: space-between;
-    border: 1px solid black;
     align-items: center;
     height: 100px;
     padding: 0 40px;
+    background-color: #888787;   
 }
 nav {
     display: flex;
     align-items: center;
 }
-
 header .middle-navbar a {
     text-decoration: none;
     color: #222;
@@ -33,11 +40,9 @@ header .middle-navbar a {
     padding-bottom: 5px;
     transition: color 0.3s;
 }
-
 header .middle-navbar a:hover {
-    color: #fb61da; /* Change to pink color */
+    color: var(--main-color); /* Change to pink color */
 }
-
 header .middle-navbar a::after {
     content: "";
     position: absolute;
@@ -45,10 +50,9 @@ header .middle-navbar a::after {
     bottom: 0;
     width: 0;
     height: 2px;
-    background-color: #fb61da; /* Pink color */
+    background-color: var(--main-color); /* Pink color */
     transition: width 0.3s;
 }
-
 header .middle-navbar a:hover::after {
     width: 100%;
 }
@@ -76,8 +80,9 @@ header .right-navbar a{
 header .right-navbar button{
     width: 150px;
     height: 40px;
-    border: 2px solid pink;
-    background-color: transparent;
+    font-size: 1rem;
+    border: 2px solid #fff;
+    background-color: var(--main-color);
 }
 header .right-navbar .image{
     border-radius: 50px;
@@ -87,27 +92,147 @@ header .right-navbar .image{
     justify-content: center;
     align-items: center;
     margin-left: 50px;
-    box-shadow: -1px 5px 5px #f9e8e8, 1px -5px 5px #ffffff;
+    background-color: #fff;
+    box-shadow: -1px 5px 5px #7d7d7d, 1px -5px 5px #7d7d7d;
 }
 
 
 
-
+/* HOME PAGE */
 .home-page {
-    background-image: url(./image/pexels-chalo-1657343\ \(1\).jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-color: #dbd9d9;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
     text-align: center;
-    color: #222; /* Set text color to white or a suitable contrast color */
-    padding: 100px 20px; /* Adjust padding according to your design */
+    color: #222; 
+    height: 100vh;
+    padding-bottom: 70px;
 }
-
-/* Styling for the text and button */
 .home-page h1 {
-    font-size: 4rem;
-    margin-bottom: 20px;
+    font-size: 5rem;
+}
+.home-page h2{
+    font-size: 2rem;
+}
+.home-page p{
+    font-size: 2rem;
+    /* letter-spacing: -1.5px; */
+}
+.home-page button{
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 1rem;
+    margin-top: 20px;
+    background-color: var(--main-color);
 }
 
-.home-page h2 {}
-    font-size
+
+/* OFFER PAGE */
+.offer {
+    text-align: center;
+    
+    height: 100vh;
+}
+.offer h1{
+    margin-top: 100px;
+}
+.offer .lower{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 50px;
+    margin-top: 20px;
+}
+.offer .lower .list .box .images{
+    width: 270px;
+    border-radius: 5px;
+    height: 270px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    /* border: 1px solid black; */
+    box-shadow: -1px 5px 5px #919191, 1px -5px 5px #c6c6c6;
+
+}
+.offer .lower .list .box img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+}
+.offer .lower .list .box{
+    text-align: center;
+    margin-left: 30px;
+}
+.offer .lower .list .box .text{
+    margin-top: 30px;
+    width: 270px;
+}
+.offer .lower .list .box .text p{
+    margin-top: 15px;
+}
+.offer .lower .list .box .text button{
+    height: 30px;
+    margin-top: 20px;
+    background-color: transparent;
+    border-bottom: 1.5px solid  #222;
+    transition: .5s;
+}
+.offer .lower .list .box .text button:hover{
+    border-bottom: 2px solid  #ef5f5f;
+    color: #ef5f5f;
+}
+
+
+
+/* SLIDER */
+.container{
+    background-color: #dbd9d9;
+    height: 100vh;
+    padding: 2rem;
+}
+.slider-wrapper{
+    position: relative;
+    max-width: 48rem;
+    margin: 0 auto;
+}
+.slider{
+    display: flex;
+    aspect-ratio: 16/9;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    border-radius: 0.5rem;
+}
+.slider img{
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+.slider-nav{
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+.slider-nav a{
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+}
+.slider-nav a:hover{
+    opacity: 1;
+}
