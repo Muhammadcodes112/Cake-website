@@ -21,6 +21,31 @@ body{
     --main-color: rgb(244, 74, 111);
 }
 
+.slideInTop{
+    animation: slideInTop 0.3s ease-in-out;
+}
+@keyframes slideInTop{
+    0%{
+        transform: translateY(-100%);
+        opacity: 0;
+    }100%{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+
+.ads{
+    width: 100%;
+    height: 50px;
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    transition: .5s ease    ;
+}
 header{
     display: flex;
     justify-content: space-between;
@@ -33,56 +58,44 @@ nav {
     display: flex;
     align-items: center;
 }
+header .middle-navbar{
+    margin-right: 120px;
+}
 header .middle-navbar a {
-    text-decoration: none;
     color: #222;
     position: relative;
     padding-bottom: 5px;
     transition: color 0.3s;
+    margin-left: 10px;
+    color: black;
+    font-weight: 600;
+    position: relative;
+    transition: .5s ease;
+    width: 100px;
+    height: 40px;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .middle-navbar a:nth-child(1){
+    background-color: var(--main-color);
 }
 header .middle-navbar a:hover {
-    color: var(--main-color); /* Change to pink color */
-}
-header .middle-navbar a::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 0;
-    height: 2px;
-    background-color: var(--main-color); /* Pink color */
-    transition: width 0.3s;
-}
-header .middle-navbar a:hover::after {
-    width: 100%;
+    color: var(--second-bg-color);
+    background-color: var(--main-color);
 }
 header .left-navbar img{
     height: 200px;
     margin-top: 20px;
-}
-header .middle-navbar a{
-    margin-left: 40px;
-    color: black;
-    position: relative;
 }
 header .right-navbar {
     margin-right: 50px;
     display: flex;
     align-items: center;
 }
-header .right-navbar img{
-    width: 20px;
-    height: 20px;
-}
 header .right-navbar a{
     color: black;
-}
-header .right-navbar button{
-    width: 150px;
-    height: 40px;
-    font-size: 1rem;
-    border: 2px solid #fff;
-    background-color: var(--main-color);
 }
 header .right-navbar .image{
     border-radius: 50px;
@@ -119,7 +132,7 @@ header .right-navbar .image{
     font-size: 2rem;
     /* letter-spacing: -1.5px; */
 }
-.home-page button{
+.home-page button:nth-child(1){
     width: 150px;
     height: 50px;
     border-radius: 10px;
@@ -127,6 +140,15 @@ header .right-navbar .image{
     margin-top: 20px;
     background-color: var(--main-color);
 }
+.home-page .left-pane button:nth-child(2){
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 1rem;
+    margin-top: 20px;
+    background-color: var(--main-color);
+}
+
 
 
 /* OFFER PAGE */
@@ -236,3 +258,146 @@ header .right-navbar .image{
 .slider-nav a:hover{
     opacity: 1;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.payment-info {
+    background: blue;
+    padding: 10px;
+    border-radius: 6px;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .product-details {
+    padding: 10px;
+  }
+  
+  body {
+    background: #eee;
+  }
+  
+  .cart {
+    background: #fff;
+  }
+  
+  .p-about {
+    font-size: 12px;
+  }
+  
+  .table-shadow {
+    -webkit-box-shadow: 5px 5px 15px -2px rgba(0,0,0,0.42);
+    box-shadow: 5px 5px 15px -2px rgba(0,0,0,0.42);
+  }
+  
+  .type {
+    font-weight: 400;
+    font-size: 10px;
+  }
+  
+  label.radio {
+    cursor: pointer;
+  }
+  
+  label.radio input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+  
+  label.radio span {
+    padding: 1px 12px;
+    border: 2px solid #ada9a9;
+    display: inline-block;
+    color: #8f37aa;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 300;
+  }
+  
+  label.radio input:checked + span {
+    border-color: #fff;
+    background-color: blue;
+    color: #fff;
+  }
+  
+  .credit-inputs {
+    background: rgb(102,102,221);
+    color: #fff !important;
+    border-color: rgb(102,102,221);
+  }
+  
+  .credit-inputs::placeholder {
+    color: #fff;
+    font-size: 13px;
+  }
+  
+  .credit-card-label {
+    font-size: 9px;
+    font-weight: 300;
+  }
+  
+  .form-control.credit-inputs:focus {
+    background: rgb(102,102,221);
+    border: rgb(102,102,221);
+  }
+  
+  .line {
+    border-bottom: 1px solid rgb(102,102,221);
+  }
+  
+  .information span {
+    font-size: 12px;
+    font-weight: 500;
+  }
+  
+  .information {
+    margin-bottom: 5px;
+  }
+  
+  .items {
+    -webkit-box-shadow: 5px 5px 4px -1px rgba(0,0,0,0.25);
+    box-shadow: 5px 5px 4px -1px rgba(0, 0, 0, 0.08);
+  }
+  
+  .spec {
+    font-size: 11px;
+  }
+

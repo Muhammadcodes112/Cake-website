@@ -5,26 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cake Website</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
+    <div class="ads">
+        <p class="slideInTop" id="displayText">Flash Sales Ongoing </p>
+    </div>
+    
     <header>
         <nav class="left-navbar">
             <a href="#"><img src="./image/logo.png" alt="logo"></a>
         </nav>
         <nav class="middle-navbar">
             <a href="#">Home</a>
+            <a href="#">Blog</a>
             <a href="#">Gallery</a>
             <a href="#">About</a>
             <a href="#">Contact us</a>
         </nav>
         <nav class="right-navbar">
-            <button><a href="#"><img src="./image/call.png" alt="">GET IN TOUCH</a></button>
             <div class="image">
-                <img src="./image/cart.png" alt="cart-image">
+                <a href="./carts.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
             </div>
         </nav>
     </header>
-
 
     <!-- HOME PAGE -->
     <section class="home-page">
@@ -33,10 +37,13 @@
             <h2>CAKES FOR YOU</h2>
             <p>We offer the best cakes for you.</p>
             <button>Order Now</button>
+            <button>GET IN TOUCH</button>
         </div>
 
         <div class="right-pane">
-            <img src="./image/plateofcake.png" alt="">
+            <!-- <img src="./image/plateofcake.png" alt=""> -->
+            <!-- <img src="./image/3d-casual-life-cook-with-raspberry-cake.png" alt=""> -->
+            <img src="./image/3d-plastic-people-birthday-cake-with-balloons.png" alt="">
         </div>
     </section>
 
@@ -102,5 +109,35 @@
             </div>
         </div>
     </section> -->
+
+
+
 </body>
+
+<script>
+    const displayTextElement = document.getElementById('displayText');
+    
+    function rotateText() {
+      setTimeout(() => {
+        displayTextElement.textContent = 'Grab your order now 💼';
+      }, 3000);
+  
+      setTimeout(() => {
+        displayTextElement.textContent = 'sweet rates 😊 ';
+      }, 7000);
+  
+      setTimeout(() => {
+        displayTextElement.textContent = 'Flash Sales Ongoing ⚡';
+        rotateText(); // Repeat the cycle
+      }, 10000);
+    }
+  
+    // Start the rotation
+    rotateText();
+  </script>
+
+
+
+
+
 </html>
