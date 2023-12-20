@@ -6,10 +6,11 @@
     <title>Cake Website</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="swiper-bundle.min.css">
 </head>
 <body>
     <div class="ads">
-        <p class="slideInTop" id="displayText">Flash Sales Ongoing </p>
+        <p class="slideInTop" id="displayText">Flash Sales Ongoing ⚡ </p>
     </div>
     
     <header>
@@ -35,19 +36,16 @@
    
 
     <!-- HOME PAGE -->
-    <section class="home-page">
+    <section class="home-page" id="home">
         <div class="content">
             <div class="left-pane">
                 <h1>Delicious</h1>
                 <h2>CAKES FOR YOU</h2>
                 <p>We offer the best cakes for you.</p>
                 <a class="btn1">Order Now</a>
-                <!-- <a>GET IN TOUCH</a> -->
             </div>
     
             <div class="right-pane">
-                <!-- <img src="./image/plateofcake.png" alt=""> -->
-                <!-- <img src="./image/3d-casual-life-cook-with-raspberry-cake.png" alt=""> -->
                 <img src="./image/3d-plastic-people-birthday-cake-with-balloons.png" alt="">
             </div>
         </div>
@@ -107,37 +105,41 @@
 
     <!-- NEW PRODUCTS -->
     <section class="new-products">
-        <h1>NEW PRODUCTS</h1>
         <div class="content">
-            <div class="box">
-                <div class="inner-box">
-                    <img src="./image/3d-casual-life-cook-with-raspberry-cake.png" alt="">
-                    <h5>CHOCOLATE TRUFFLES</h5>
-                    <p>23$</p>
-                </div>
+            <div class="text">
+                <h1>NEW PRODUCTS</h1>
             </div>
-
-            <div class="box">
-                <div class="inner-box">
-                    <img src="./image/3d-casual-life-cook-with-raspberry-cake.png" alt="">
-                    <h5>CHOCOLATE TRUFFLES</h5>
-                    <p>23$</p>
+            <div class="inner-content">
+                <div class="box">
+                    <div class="inner-box">
+                        <img src="./image/3d-casual-life-cook-with-raspberry-cake.png" alt="">
+                        <h5>CHOCOLATE TRUFFLES</h5>
+                        <p>23$</p>
+                    </div>
                 </div>
-            </div>
 
-            <div class="box">
-                <div class="inner-box">
-                    <img src="./image/3d-casual-life-cook-with-raspberry-cake.png" alt="">
-                    <h5>CHOCOLATE TRUFFLES</h5>
-                    <p>23$</p>
+                <div class="box">
+                    <div class="inner-box">
+                        <img src="./image/3d-casual-life-cook-with-raspberry-cake.png" alt="">
+                        <h5>CHOCOLATE TRUFFLES</h5>
+                        <p>23$</p>
+                    </div>
                 </div>
-            </div>
 
-            <div class="box">
-                <div class="inner-box">
-                    <img src="./image/3d-casual-life-cook-with-raspberry-cake.png" alt="">
-                    <h5>CHOCOLATE TRUFFLES</h5>
-                    <p>23$</p>
+                <div class="box">
+                    <div class="inner-box">
+                        <img src="./image/3d-casual-life-cook-with-raspberry-cake.png" alt="">
+                        <h5>CHOCOLATE TRUFFLES</h5>
+                        <p>23$</p>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="inner-box">
+                        <img src="./image/3d-casual-life-cook-with-raspberry-cake.png" alt="">
+                        <h5>CHOCOLATE TRUFFLES</h5>
+                        <p>23$</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -150,8 +152,9 @@
     <!-- INGREDIENTS -->
     <section class="ingredients">
        <div class="firstcontent">
-        <h3>We Love What We Do</h3>
-        <h1>How We Bake Cakes</h1>
+            <h3>We Love What We Do</h3>
+            <h1>How We Bake Cakes</h1>
+       </div>
         <div class="content">
             <div class="left-side">
                 <div class="box1">
@@ -184,49 +187,91 @@
                 <div class="box1">
                     <img src="./image/3d-casual-life-cook-with-raspberry-cake.png" alt="">
                     <h4>4. Dish Ready</h1>
-                    <p>Chances are there wasn;t collaboration, communication.</p>
+                    <p>Chances are there wasn't collaboration, communication.</p>
                     <a href="#">Read More</a>
                 </div>
             </div>
         </div>
-       </div>
     </section>
 
 
 
+    <footer>
+        <div class="content">
 
-
-
-
-
-
-
-
-
-
-
-
-    <!-- SLIDER -->
-    <!-- <section class="container">
-        <div class="slider-wrapper">
-            <div class="slider">
-                <img id="slide-1" src="./image/pexels-vojtech-okenka-1055272-removebg-preview.png" alt="">
-
-                <img id="slide-2" src="./image/pexels-vojtech-okenka-1055272-removebg-preview.png" alt="">
-
-                <img id="slide-3" src="./image/pexels-vojtech-okenka-1055272-removebg-preview.png" alt="">
+            <div class="first">
+                <div class="top">
+                    <h5>M-Cakes</h5>
+                    <h6>M-Cakes Workshop, LLC</h6>
+                    <h6>We offer the best cakes at Kaduna Nigeria.</h6>
+                </div>
+                <div class="bottom">
+                    <h6>454 Wall Street, Kaduna Nigeria</h6>
+                    <h6>Phone [234] 893-351-60263</h6>
+                    <h6>Fax (099) 536-6253</h6>
+                </div>
             </div>
-            <div class="slider-nav">
-                <a href="#slide-1"></a>
-                <a href="#slide-2"></a>
-                <a href="#slide-3"></a>
+
+            <div class="second">
+                <h5>RECENT POSTS</h5>
+                <div class="top">
+                    <div class="image">
+                        <img src="./image/hamburger.png" alt="">
+                    </div>
+                    <div class="text">
+                        <h5>A company of extra sleeping</h5>
+                        <h6>10 Jan 2023 | Comment</h6>
+                    </div>
+                </div>
+
+                <div class="bottom">
+                    <div class="image">
+                        <img src="./image/hamburger.png" alt="">
+                    </div>
+                    <div class="text">
+                        <h5>A company of extra sleeping</h5>
+                        <h6>10 Jan 2023 | Comment</h6>
+                    </div>
+                </div>
             </div>
+
+
+            <div class="socials">
+                <div class="text">
+                    <h5>SOCIALS</h5>
+                    <h6>Get in touch with us</h6>
+                </div>
+                <div class="accounts">
+                    <img src="./image/facebook.png" alt="">
+                    <img src="./image/instagram.png" alt="">
+                    <img src="./image/twitter.png" alt="">
+                    <img src="./image/whatsapp.png" alt="">
+                    <img src="./image/facebook_messenger_64px.png" alt="">
+                </div>
+
+                <div class="about">
+                    <h5>ABOUT US</h5>
+                    <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe laborum minima vel si!</h6>
+                </div>
+            </div>
+
+            <div class="arrow">
+                <a href="#home"><img src="./image/collapse_arrow_24px.png" alt=""></a>
+            </div>
+
         </div>
-    </section> -->
+    </footer>
 
 
-    
 
+
+
+
+
+
+
+
+  
 
     
 <script>
@@ -258,7 +303,14 @@
   
     // Start the rotation
     rotateText();
+
+
+
+
+
+  
   </script>
+  <script src="swiper-bundle.min.js"></script>
 
 </body>
 
