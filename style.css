@@ -651,13 +651,20 @@ footer .content .arrow{
 
 @media only screen and (max-width: 917px) {
     section{
-        /* min-height: 20vh; */
-        padding: 10rem 9% 2rem;
+        /* max-height: 120vh; */
+        /* padding: 80rem 20% 10rem; */
+    }
+    .ads{
+        position: fixed;
+        padding: 0 30px;
+        /* margin-top: 200px; */
     }
     header{
         padding-left: 30px;
         padding-right: 30px;
         width: 100%;
+        /* margin-top: 240px; */
+        height: 60px;
     }
     header .middle-navbar{
         display: block;
@@ -674,7 +681,6 @@ footer .content .arrow{
         transition: opacity 0.3s ease-in-out;
     }
     header .middle-navbar a{
-        /* display: block; */
         column-gap: 20px;
         padding: auto;
         margin-left: auto;
@@ -706,45 +712,53 @@ footer .content .arrow{
         display: grid;
         justify-content: center;
         align-items: center;
-        margin-top: -200px;
         margin-left: auto;
         margin-right: auto;
         padding: 120px 10px;
     }
     .home-page .content .left-pane {
         line-height: 40px;
+        margin-top: 20px;
     }
     .home-page .content .left-pane h1{
-        font-size: 2.9rem;
+        font-size: 3rem;
     }
     .home-page .content .left-pane h2{
-        font-size: 1.2rem;
-    }
-    .home-page .content .left-pane p{
         font-size: 1rem;
     }
-
+    .home-page .content .left-pane p{
+        font-size: 1.1rem;
+    }
+    .home-page .content .left-pane a{
+        font-size: 1rem;
+        height: 50px;
+        margin-top: 10px;
+    }
     .home-page .right-pane{
-        margin-top: -200px;
+        margin-top: -330px;
         margin-left: auto;
         margin-right: auto;
-        width: 70%;
+    }
+    .home-page .content .right-pane img{
+        width: 210px;
+        height: 270px;
     }
 
 
 
     .offer{
-        height: 220vh;
+        min-height: 230vh;
+        margin-top: -100px;  
     }
     .offer .content .lower{
         margin-top: 70px;
     }
     .offer .content{
-        margin-left: auto;
-        margin-right: auto;
+       /* background-color: #fff; */
+       
     }
     .offer .content h1{
-        margin-top: -100px;
+        /* margin-top: -100px; */
     }
     .offer .lower{
         gap: 70px;
@@ -763,7 +777,7 @@ footer .content .arrow{
         height: 190px;
     }
     .offer .lower .list .box .text{
-        margin-top: 25px;
+        /* margin-top: 25px; */
         width: 230px;
         line-height: 19px;
     }
@@ -786,7 +800,7 @@ footer .content .arrow{
 
 
     .new-products{
-        height: 200vh;
+        min-height: 200vh;
         border-bottom-left-radius: 25px;
         border-bottom-right-radius: 25px;
     }
@@ -806,9 +820,12 @@ footer .content .arrow{
 
 
 
-
-    .ingredients .firstcontent{
+    .ingredients{
         margin-top: -140px;
+        min-height: 240vh;
+    }
+    .ingredients .content{
+        margin-top: 140px;
     }
     .ingredients .content{
         display: grid;       
@@ -822,6 +839,7 @@ footer .content .arrow{
     .ingredients .content .left-side{
         margin-left: auto;
         margin-right: auto;
+        display: grid;
     }
     .ingredients .content .left-side .box1{
         width: 270px;
@@ -830,11 +848,61 @@ footer .content .arrow{
     .ingredients .content .right-side{
         margin-left: auto;
         margin-right: auto;
+        display: grid;
     }
     .ingredients .content .right-side .box1{
         width: 270px;
         height: 300px;
     }
+
+
+
+
+    footer{
+        height: 70vh;
+        margin-top: -5px;
+    }
+    footer .content{
+        display: grid;
+        grid-template-columns: 120px 120px;
+    }
+    footer .content .first .top{
+        line-height: 15px;
+        width: 130px;
+        margin-left: -150px;
+    }
+    footer .content .first .bottom{
+        line-height: 7px;
+        margin-left: -150px;
+        width: 145px;
+        font-size: 0.8rem;
+    }
+    footer .content  .second{
+        font-size: 0.7rem;
+        margin-top: 43px;
+        margin-left: -25px;
+    }
+    footer .content  .second h5{
+        margin-top: -20px;
+    }
+    footer .content  .second .top{
+        margin-top: -10px;
+    }
+    /* footer .content  .socials{
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+    }
+    footer .content  .socials .accounts{
+        display: none;
+    }
+    footer .content  .socials .about{
+        width: 100px;
+    }
+    footer .content .arrow{
+        position: absolute;
+        display: none;
+    } */
 }
 
 
