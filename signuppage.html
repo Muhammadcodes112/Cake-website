@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M-cakes/Signup</title>
+
+    <style>
+        @import url('Https://fonts.googleapis.com/css2?family=Poppins');
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        border: none;
+        outline: none;
+        scroll-behavior: smooth;
+        font-family: 'Poppins', sans-serif;
+    }
+    :root{
+    --bg-color: #fff;
+    --second-bg-color: #222;
+    --text-color: rgb(15, 15, 15);
+    --main-color: rgb(244, 74, 111);
+}
+    body{
+        color: black;
+        background-color: #f0f0f0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .wrapper{  
+        background-color: #6b6969;
+        border-radius: 10px;
+        width: 350px;
+        height: 500px;
+    }
+    .wrapper .content{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    .wrapper .content .up{
+        width: 350px;
+        height: 150px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .wrapper .content .up .content{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        
+    }
+    .wrapper .content .up img{
+        width: 150px;
+        height: 170px;
+        padding: 10px;
+    }
+    .wrapper .content .down{
+    }
+    .wrapper .content .down .content{
+        display: grid;
+        gap: 7px;
+        justify-content: left;
+        align-items: center;
+        padding-top: 10px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .wrapper .content .down .content input{
+        width: 280px;
+        height: 35px;
+        border-radius: 20px;
+    }
+    .wrapper .content .down .content h2,h6{
+        margin-left: 10px;
+    }
+    .wrapper .content .down .content .btn{
+        color: white;
+        background-color: var(--second-bg-color);
+        height: 35px;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 600;
+    }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <div class="up">
+                <div class="content">
+                    <img src="./image/3d-casual-life-cook-with-raspberry-cake.png" alt="">
+                </div>
+            </div>
+
+            <div class="down">
+                <div class="content">
+                    <h2>Sign up</h2>
+                    <h6>Full name</h6>
+                    <input id="name" type="text" placeholder="     ">
+                    <h6>Number</h6>
+                    <input id="number" type="number" placeholder="     ">
+                    <h6>Email</h6>
+                    <input id="email" type="email" placeholder="     ">
+                    <h6>Already have an account? <span><a href="signinpage.html">Log in</a></span></h6>
+                    <a id="submit" class="btn" href="./password.html">Continue</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function(){
+          var name = document.getElementById("name");
+          var number = document.getElementById("number");
+          var email =  document.getElementById("email");
+          var submit = document.getElementById("submit");
+ 
+          submit.addEventListener("click", (e) =>{
+             if (name.value == "" || number.value == "" || email.value == ""){
+                 alert("Please fill in every details");
+                 e.preventDefault();
+             }
+          })
+ 
+ 
+        })
+      </script>  
+</body>
+</html>
